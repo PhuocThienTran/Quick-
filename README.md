@@ -9,3 +9,6 @@ Ishini Tennakoon - Quick Apps Co-Founder
 Brittney Truong - Graphic Designer 
 
 Gary Tokman - Restaurant Viewing App Project
+
+
+[Alternatively, this app can be found on the App Store at:](https://apps.apple.com/au/app/quick-apps/id1505523551)
