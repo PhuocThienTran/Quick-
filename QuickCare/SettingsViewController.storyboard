@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ToP-FG-A2z">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--General-->
+        <scene sceneID="a5W-1K-PbV">
+            <objects>
+                <viewController id="ToP-FG-A2z" customClass="SettingsViewController" customModule="QuickCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="If8-du-mP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wv-9O-KPz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2be-UC-0MP">
+                                        <rect key="frame" x="13" y="207.5" width="349" height="203"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuickCare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8l-Pj-rVx">
+                                                <rect key="frame" x="0.0" y="0.0" width="349" height="63"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="46"/>
+                                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Product of Quick Apps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cj-TE-ytT">
+                                                <rect key="frame" x="0.0" y="63" width="349" height="41"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-Au-nEL">
+                                                <rect key="frame" x="0.0" y="104" width="349" height="48"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                                <state key="normal" title="Legal Documents"/>
+                                                <connections>
+                                                    <segue destination="IoG-dp-8Mk" kind="show" id="MQz-M2-fPs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89l-YH-oqs">
+                                                <rect key="frame" x="0.0" y="152" width="349" height="51"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
+                                                <state key="normal" title="Tribute to Ishini Tennakoon"/>
+                                                <connections>
+                                                    <segue destination="fb0-pE-IxZ" kind="show" id="d4R-Zu-TBi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="2be-UC-0MP" firstAttribute="centerY" secondItem="2Wv-9O-KPz" secondAttribute="centerY" id="3GB-Ka-TdC"/>
+                                    <constraint firstItem="2be-UC-0MP" firstAttribute="centerX" secondItem="2Wv-9O-KPz" secondAttribute="centerX" id="XzU-SL-T86"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Wv-9O-KPz" firstAttribute="leading" secondItem="kxC-pe-W4a" secondAttribute="leading" id="4h6-wj-18Y"/>
+                            <constraint firstItem="2Wv-9O-KPz" firstAttribute="bottom" secondItem="kxC-pe-W4a" secondAttribute="bottom" id="XQ9-fX-wga"/>
+                            <constraint firstItem="2Wv-9O-KPz" firstAttribute="centerX" secondItem="If8-du-mP1" secondAttribute="centerX" id="it1-yE-HoK"/>
+                            <constraint firstItem="2Wv-9O-KPz" firstAttribute="top" secondItem="kxC-pe-W4a" secondAttribute="top" id="nxK-j0-41H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kxC-pe-W4a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="General" image="gear" catalog="system" landscapeImage="gear" selectedImage="gear" id="6wT-z8-7r1"/>
+                    <navigationItem key="navigationItem" id="ZsK-gJ-vEr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Goy-wT-ONy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6046" y="-1976"/>
+        </scene>
+        <!--Tribute Controller-->
+        <scene sceneID="6cK-Lp-a2R">
+            <objects>
+                <viewController id="fb0-pE-IxZ" customClass="TributeController" customModule="QuickCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RtN-Zb-lq8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kKm-az-Smg">
+                                <rect key="frame" x="8" y="19.5" width="359" height="608"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratefulness to Ishini Tennakoon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvj-KR-aSE">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="021-nZ-bGY"/>
+                                            <constraint firstAttribute="width" constant="359" id="Qve-z4-5WS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scd-do-9Jm">
+                                        <rect key="frame" x="0.0" y="50" width="359" height="513"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="513" id="XWl-6a-TLa"/>
+                                            <constraint firstAttribute="width" constant="359" id="d4B-TG-2XU"/>
+                                        </constraints>
+                                        <string key="text">This is a dedication to Ishini Tennakoon Hewage. Without her, Quick Apps would not have been able to be launched. She has been instrumental in all aspects of the app, which is only a small reflection to her personality and character as a person in everyday life. She is kind hearted, generous, and mature, in which they are exemplified through everything she does in life. So thank you Ishini, for making my passion to come true and is constantly there to support me through it all. </string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tran Phuoc Thien. Quick Apps 2020" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-j2-bg7">
+                                        <rect key="frame" x="0.0" y="563" width="359" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="Dfq-hq-4mA"/>
+                                            <constraint firstAttribute="height" constant="45" id="HHN-my-XOX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kKm-az-Smg" firstAttribute="centerY" secondItem="RtN-Zb-lq8" secondAttribute="centerY" id="JPe-fy-9a4"/>
+                            <constraint firstItem="kKm-az-Smg" firstAttribute="centerX" secondItem="RtN-Zb-lq8" secondAttribute="centerX" id="atU-Pq-UBo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ntz-vq-rfT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ndP-Ix-MqG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pow-4U-O8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7009" y="-1977"/>
+        </scene>
+        <!--WebPage-->
+        <scene sceneID="eyJ-ha-zVL">
+            <objects>
+                <viewController title="WebPage" id="nKJ-Hh-anE" customClass="FirstViewController" customModule="QuickCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8oa-wB-WcX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-dr-bcN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sF6-9L-Kjw">
+                                <rect key="frame" x="169" y="318" width="37" height="37"/>
+                                <color key="color" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bOE-dr-bcN" firstAttribute="centerX" secondItem="sF6-9L-Kjw" secondAttribute="centerX" id="K74-mR-joi"/>
+                            <constraint firstItem="sF6-9L-Kjw" firstAttribute="top" secondItem="weK-Rb-iVZ" secondAttribute="top" constant="318" id="QCD-Wc-LSH"/>
+                            <constraint firstItem="bOE-dr-bcN" firstAttribute="bottom" secondItem="weK-Rb-iVZ" secondAttribute="bottom" id="XTF-UA-NkF"/>
+                            <constraint firstItem="bOE-dr-bcN" firstAttribute="centerX" secondItem="8oa-wB-WcX" secondAttribute="centerX" id="YjM-UF-34u"/>
+                            <constraint firstItem="bOE-dr-bcN" firstAttribute="top" secondItem="weK-Rb-iVZ" secondAttribute="top" id="fKi-5I-lTx"/>
+                            <constraint firstItem="bOE-dr-bcN" firstAttribute="leading" secondItem="weK-Rb-iVZ" secondAttribute="leading" id="pR8-sA-thR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="weK-Rb-iVZ"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="rewind" id="pto-qX-IXG">
+                            <connections>
+                                <action selector="back:" destination="nKJ-Hh-anE" id="24a-jX-VGT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="izE-KV-9gz"/>
+                        <barButtonItem image="house" catalog="system" landscapeImage="house" id="vIj-yx-gUe">
+                            <connections>
+                                <action selector="HomeBtn:" destination="nKJ-Hh-anE" id="dod-IM-2jz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="sIZ-vU-VZI"/>
+                        <barButtonItem systemItem="fastForward" id="gmJ-BB-KbH">
+                            <connections>
+                                <action selector="forward:" destination="nKJ-Hh-anE" id="fgF-vm-0Ou"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="dZF-eB-9CB"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ActInd" destination="sF6-9L-Kjw" id="PHY-CG-bt9"/>
+                        <outlet property="webView" destination="bOE-dr-bcN" id="qj3-HB-nVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwE-hE-iHK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7948" y="-2776.4617691154426"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="elX-6L-PDa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" toolbarHidden="NO" id="IoG-dp-8Mk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sxW-Y5-72G"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lGM-Ot-iZG">
+                        <rect key="frame" x="0.0" y="-20" width="0.0" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Cn-w2-2Fe">
+                        <rect key="frame" x="0.0" y="603" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="nKJ-Hh-anE" kind="relationship" relationship="rootViewController" id="atJ-08-x39"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvH-mT-6k1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7008.8000000000002" y="-2776.4617691154426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+    </resources>
+</document>

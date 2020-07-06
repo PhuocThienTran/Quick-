@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BB7-zs-atc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QuickNav-->
+        <scene sceneID="KWr-so-MOH">
+            <objects>
+                <viewController id="BB7-zs-atc" customClass="MapViewController" customModule="QuickCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zX6-6F-ggy"/>
+                        <viewControllerLayoutGuide type="bottom" id="heC-aV-GQh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HTb-Z1-kC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bal-Z4-8dL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driving instructions will go here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-sF-AsS">
+                                        <rect key="frame" x="8" y="8" width="359" height="88"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Smm-sF-AsS" firstAttribute="leading" secondItem="bal-Z4-8dL" secondAttribute="leadingMargin" id="6dz-mD-AIB"/>
+                                    <constraint firstItem="Smm-sF-AsS" firstAttribute="top" secondItem="bal-Z4-8dL" secondAttribute="topMargin" id="AOq-D4-vnz"/>
+                                    <constraint firstItem="Smm-sF-AsS" firstAttribute="bottom" secondItem="bal-Z4-8dL" secondAttribute="bottomMargin" id="YaA-oo-CcG"/>
+                                    <constraint firstItem="Smm-sF-AsS" firstAttribute="trailing" secondItem="bal-Z4-8dL" secondAttribute="trailingMargin" id="orb-FX-nvP"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Example: Nearby Amusement Parks" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-sa-OW4">
+                                <rect key="frame" x="0.0" y="104" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="1PW-Ho-tdb"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" textContentType="location"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BB7-zs-atc" id="5pg-2U-qZW"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NbH-oE-wnd">
+                                <rect key="frame" x="0.0" y="160" width="375" height="458"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="458" id="HJO-ET-3Dl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BB7-zs-atc" id="L6x-LL-6fg"/>
+                                </connections>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YsL-oT-Wm5">
+                                <rect key="frame" x="57" y="554" width="261" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlActionWithSender:" destination="BB7-zs-atc" eventType="valueChanged" id="LZr-QO-4kJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zw-hT-bAs">
+                                <rect key="frame" x="16" y="160" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="m8n-mx-eTL"/>
+                                </constraints>
+                                <state key="normal" image="trash" catalog="system"/>
+                                <connections>
+                                    <action selector="RemoveOverlay:" destination="BB7-zs-atc" eventType="touchUpInside" id="lI6-Kx-Gs7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TWc-sa-OW4" firstAttribute="trailing" secondItem="NbH-oE-wnd" secondAttribute="trailing" id="0fx-bR-jcU"/>
+                            <constraint firstItem="9Zw-hT-bAs" firstAttribute="top" secondItem="NbH-oE-wnd" secondAttribute="top" id="1wD-6A-mwf"/>
+                            <constraint firstItem="TWc-sa-OW4" firstAttribute="leading" secondItem="NbH-oE-wnd" secondAttribute="leading" id="40o-hl-ejy"/>
+                            <constraint firstItem="7C8-WZ-Igv" firstAttribute="trailing" secondItem="9Zw-hT-bAs" secondAttribute="trailing" constant="309" id="4bk-Xr-vAI"/>
+                            <constraint firstItem="bal-Z4-8dL" firstAttribute="trailing" secondItem="TWc-sa-OW4" secondAttribute="trailing" id="6AX-uo-2aX"/>
+                            <constraint firstItem="9Zw-hT-bAs" firstAttribute="leading" secondItem="HTb-Z1-kC3" secondAttribute="leadingMargin" id="6SE-8z-tLM"/>
+                            <constraint firstItem="bal-Z4-8dL" firstAttribute="top" secondItem="7C8-WZ-Igv" secondAttribute="top" id="75j-NP-YP3"/>
+                            <constraint firstItem="heC-aV-GQh" firstAttribute="top" secondItem="YsL-oT-Wm5" secondAttribute="bottom" constant="33" id="7GA-ec-c5H"/>
+                            <constraint firstItem="bal-Z4-8dL" firstAttribute="leading" secondItem="7C8-WZ-Igv" secondAttribute="leading" id="DQu-y0-iTW"/>
+                            <constraint firstItem="bal-Z4-8dL" firstAttribute="leading" secondItem="TWc-sa-OW4" secondAttribute="leading" id="R95-CK-iBO"/>
+                            <constraint firstItem="YsL-oT-Wm5" firstAttribute="leading" secondItem="7C8-WZ-Igv" secondAttribute="leading" constant="57" id="V8W-jn-LRF"/>
+                            <constraint firstItem="NbH-oE-wnd" firstAttribute="bottom" secondItem="7C8-WZ-Igv" secondAttribute="bottom" id="ZhW-bf-g9P"/>
+                            <constraint firstItem="NbH-oE-wnd" firstAttribute="top" secondItem="TWc-sa-OW4" secondAttribute="bottom" id="dyJ-JS-H1Y"/>
+                            <constraint firstItem="TWc-sa-OW4" firstAttribute="top" secondItem="bal-Z4-8dL" secondAttribute="bottom" id="idU-iu-4B2"/>
+                            <constraint firstItem="NbH-oE-wnd" firstAttribute="centerX" secondItem="YsL-oT-Wm5" secondAttribute="centerX" id="yKF-fC-iZI"/>
+                            <constraint firstItem="bal-Z4-8dL" firstAttribute="centerX" secondItem="HTb-Z1-kC3" secondAttribute="centerX" id="zN7-hf-uZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7C8-WZ-Igv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="QuickNav" image="globe" catalog="system" landscapeImage="globe" selectedImage="globe" id="Fap-gK-3ct"/>
+                    <navigationItem key="navigationItem" id="DOS-og-h4S"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="directionsLabel" destination="Smm-sF-AsS" id="ze2-DN-F5r"/>
+                        <outlet property="map" destination="NbH-oE-wnd" id="Yx1-PH-BpJ"/>
+                        <outlet property="mapView" destination="NbH-oE-wnd" id="hJs-Bl-XrE"/>
+                        <outlet property="searchBar" destination="TWc-sa-OW4" id="SEl-nf-x5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQz-q6-nqG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1508" y="-1307.4962518740631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
