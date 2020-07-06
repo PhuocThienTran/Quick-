@@ -10,4 +10,4 @@ Brittney Truong - Graphic Designer
 
 Gary Tokman - Restaurant Viewing App Project
 
-## Alternatively, this app can be found on the App Store at: [Quick+](https://apps.apple.com/au/app/quick-apps/id1505523551)
+## Alternatively, this app can be found on the App Store: [Quick+](https://apps.apple.com/au/app/quick-apps/id1505523551)
