@@ -11,4 +11,13 @@ Brittney Truong - Graphic Designer
 
 Gary Tokman - Restaurant Viewing App Project
 
-### This app can be found on the App Store: [Quick+](https://apps.apple.com/au/app/quick-apps/id1505523551)
+## This app can be found on the App Store: [Quick+](https://apps.apple.com/au/app/quick-apps/id1505523551)
+
+## Got any inquries? [Drop me an Email](mailto:donnyquickinc@gmail.com)
+
+<br>
+
+#### Enjoying this repository? Kindly support me with some spare change, as I'm still a husttling university student!
+  <a href="https://www.paypal.me/thientran2702"><img src="blue.svg" height="40"></a>  
+<p>PayPal is a registered trademark of PayPal, Inc. The PayPal logo is a trademark of PayPal, Inc.</p>
+
